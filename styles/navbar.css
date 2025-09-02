@@ -1,0 +1,101 @@
+/* === NAVBAR STYLING === */
+.header {
+  background-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #006DAA;    /* Black background */
+  padding: 1rem 2rem;
+  position: fixed;        /* Fixed at top */
+  top: 0;
+  left: 0;
+  width: 100%;            /* Span full width */
+  z-index: 1000;          /* Stay above content */
+}
+
+/* Push page content down so it’s not hidden under navbar */
+body {
+  margin: 0;
+  padding-top: 70px;      /* Adjust if navbar height changes */
+  background: #FAFAFA;    /* Background color */
+  font-family: Arial, sans-serif;
+  color: #222222;         /* Default text */
+}
+
+/* Logo stays at the left */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FAFAFA;         /* Primary */
+  letter-spacing: 1px;
+}
+
+/* Nav links are centered */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #FAFAFA;         /* Primary text color */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #222;         /* Secondary hover color */
+}
+
+/* === CENTER ONLY HOME + CONTACT === */
+#home,
+#contact {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#home h2,
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #006DAA;         /* Primary */
+}
+
+#home p,
+#contact p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #222222;         /* Blacks */
+}
+
+/* Smooth scroll when clicking nav links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === RESPONSIVE NAVBAR === */
+@media (max-width: 768px) {
+  .nav-links {
+    position: static;
+    transform: none;
+    justify-content: center;
+    flex: 1;
+  }
+}

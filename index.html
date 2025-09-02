@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,15 +6,22 @@
   <title>Overflow</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/">
+  <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+  <nav class="navbar">
+    <div class="logo">Overflow</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <section class="about-section">
@@ -30,7 +37,7 @@
             <h3 class="member-name">Ken Cedrick Jimeno</h3>
             <p class="member-role">Lead Developer</p>
             <p class="member-description">
-                Passionate software architect with expertise in full-stack development and system design. Ken brings <span class="highlight-accent">innovative solutions</span> to complex technical challenges, leading our development initiatives with precision and creativity.
+              Passionate software architect with expertise in full-stack development and system design. Ken brings <span class="highlight-accent">innovative solutions</span> to complex challenges.
             </p>
           </div>
         </a>
@@ -41,7 +48,7 @@
             <h3 class="member-name">Jean Clyde Egmilan</h3>
             <p class="member-role">Technical Specialist</p>
             <p class="member-description">
-                Detail-oriented engineer specializing in software optimization and quality assurance. Jean ensures our products meet the highest standards while implementing <span class="highlight-accent">cutting-edge technologies</span> for enhanced performance.
+              Detail-oriented engineer specializing in optimization and QA. Jean ensures our products meet the highest standards with <span class="highlight-accent">cutting-edge technologies</span>.
             </p>
           </div>
         </a>
@@ -57,6 +64,12 @@
           </div>
         </a>
       </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <p>You can reach us at <a href="mailto:info@overflow.com">info@overflow.com</a></p>
     </section>
   </main>
 
