@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,18 +6,78 @@
   <title>Overflow</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+  <nav class="navbar">
+    <div class="logo">Overflow</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
-    <h2>Hello World</h2>
-    <p>This is a starter HTML template. You can add more content here.</p>
+      <!-- HOME SECTION -->
+    <section id="home" class="content-section">
+      <h2>Hello World</h2>
+      <p>This is a starter HTML template. You can add more content here.</p>
+    </section>
+    
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <h2 class="section-title">About Our Team</h2>
+        <p class="section-subtitle">Meet the passionate individuals behind our innovative solutions, dedicated to delivering excellence in every project we undertake.</p>
+      </div>
+      
+      <div class="team-grid">
+        <a href="https://github.com/devcedrick" target="_blank">
+          <div class="team-card">
+            <img class="avatar" src="assets/images/jimeno-portrait.png" alt="Ken Cedrick Jimeno's portrait picture">
+            <h3 class="member-name">Ken Cedrick Jimeno</h3>
+            <p class="member-role">Lead Developer</p>
+            <p class="member-description">
+              Passionate software architect with expertise in full-stack development and system design. Ken brings <span class="highlight-accent">innovative solutions</span> to complex challenges.
+            </p>
+          </div>
+        </a>
+        
+        <a href="https://github.com/ClydeZzz16" target="_blank">
+          <div class="team-card">
+            <img class="avatar" src="assets/images/egmilan-portrait.png" alt="Jean Clyde Egmilan's portrait picture">
+            <h3 class="member-name">Jean Clyde Egmilan</h3>
+            <p class="member-role">Technical Specialist</p>
+            <p class="member-description">
+              Detail-oriented engineer specializing in optimization and QA. Jean ensures our products meet the highest standards with <span class="highlight-accent">cutting-edge technologies</span>.
+            </p>
+          </div>
+        </a>
+        
+        <a href="https://github.com/devjeyem" target="_blank">
+          <div class="team-card">
+            <img class="avatar" src="assets/images/pintin-portrait.png" alt="Jm Pintin's portrait picture">
+              <h3 class="member-name">Jm Pintin</h3>
+              <p class="member-role">Systems Engineer</p>
+              <p class="member-description">
+                  Strategic thinker focused on scalable system architecture and project coordination. Jm bridges technical excellence with practical implementation, ensuring our solutions are both <span class="highlight-accent">robust and user-friendly</span>.
+              </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <p>You can reach us at <a href="mailto:info@overflow.com">info@overflow.com</a></p>
+    </section>
   </main>
 
   <footer>
