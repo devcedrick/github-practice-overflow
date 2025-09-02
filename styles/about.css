@@ -46,6 +46,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  height: 450px;
 }
 
 .team-card::before {
