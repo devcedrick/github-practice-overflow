@@ -32,6 +32,10 @@
   margin-top: 50px;
 }
 
+.team-grid a{
+  text-decoration: none;
+}
+
 .team-card {
   background: white;
   border-radius: 20px;
@@ -41,6 +45,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .team-card::before {
