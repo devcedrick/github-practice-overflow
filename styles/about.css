@@ -72,6 +72,7 @@
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  object-fit: fill;
 }
 
 .team-card:hover .avatar {
