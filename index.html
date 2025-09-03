@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/darkmode.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Overflow</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <span id="themeText" class="theme-text">Dark Mode</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="home-section">
+      <div class="welcome-container">
+        <h1 class="welcome-title">Welcome to Overflow</h1>
+        <p class="welcome-subtitle">
+          Innovative software solutions crafted with passion, precision, and creativity.
+        </p>
+        <a href="#about" class="welcome-btn">Learn More</a>
+      </div>
+    </section>
+    
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <h2 class="section-title">About Our Team</h2>
+        <p class="section-subtitle">Meet the passionate individuals behind our innovative solutions, dedicated to delivering excellence in every project we undertake.</p>
+      </div>
+      
+      <div class="team-grid">
+        <a href="https://github.com/devcedrick" target="_blank">
+          <div class="team-card">
+            <img class="avatar" src="assets/images/jimeno-portrait.png" alt="Ken Cedrick Jimeno's portrait picture">
+            <h3 class="member-name">Ken Cedrick Jimeno</h3>
+            <p class="member-role">Lead Developer</p>
+            <p class="member-description">
+              Passionate software architect with expertise in full-stack development and system design. Ken brings <span class="highlight-accent">innovative solutions</span> to complex challenges.
+            </p>
+          </div>
+        </a>
+        
+        <a href="https://github.com/ClydeZzz16" target="_blank">
+          <div class="team-card">
+            <img class="avatar" src="assets/images/egmilan-portrait.png" alt="Jean Clyde Egmilan's portrait picture">
+            <h3 class="member-name">Jean Clyde Egmilan</h3>
+            <p class="member-role">Technical Specialist</p>
+            <p class="member-description">
+              Detail-oriented engineer specializing in optimization and QA. Jean ensures our products meet the highest standards with <span class="highlight-accent">cutting-edge technologies</span>.
+            </p>
+          </div>
+        </a>
+        
+        <a href="https://github.com/devjeyem" target="_blank">
+          <div class="team-card">
+            <img class="avatar" src="assets/images/pintin-portrait.png" alt="Jm Pintin's portrait picture">
+            <h3 class="member-name">Jm Pintin</h3>
+            <p class="member-role">Systems Engineer</p>
+            <p class="member-description">
+              Strategic thinker focused on scalable system architecture and project coordination. Jm bridges technical excellence with practical implementation, ensuring our solutions are both <span class="highlight-accent">robust and user-friendly</span>.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section">
+      <div class="section-header">
+        <h1 class="form-title">Get In Touch</h1>
+        <p class="form-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+      <div class="contact-container">
+        <div class="form-header"></div>
+
+        <div class="form-content">
+          <form id="contactForm" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" class="form-label">First Name</label>
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  name="firstName" 
+                  class="form-input" 
+                  placeholder="John"
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName" 
+                  class="form-input" 
+                  placeholder="Doe"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                placeholder="john.doe@example.com"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                class="form-input" 
+                placeholder="How can we help you?"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                placeholder="Tell us more about your inquiry..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <p>📧 <a href="mailto:kencedrickjimeno@gmail.com">kencedrickjimeno@gmail.com</a></p>
+          <p>We typically respond within 24 hours</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <h3 class="footer-logo">Overflow</h3>
+          <p class="footer-description">
+            Delivering innovative software solutions with passion and precision. We transform complex technical challenges into elegant, user-friendly experiences that drive business success.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" class="social-link">
+              <img src="assets/icons/github-icon.png" alt="GitHub" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="social-link">
+              <img src="assets/icons/linkedin-icon.png" alt="LinkedIn" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="social-link">
+              <img src="assets/icons/twitter-icon.png" alt="Twitter" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="#development">Web Development</a>
+            <a href="#mobile">Mobile Apps</a>
+            <a href="#consulting">Technical Consulting</a>
+            <a href="#support">Support & Maintenance</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#team">Our Team</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2025 Overflow. All rights reserved.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/darkmode.js"></script>
+</body>
+</html>
