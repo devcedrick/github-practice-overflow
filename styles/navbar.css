@@ -70,21 +70,6 @@ body {
   padding: 60px 20px;
 }
 
-#home h2,
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #006DAA;         /* Primary */
-}
-
-#home p,
-#contact p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  line-height: 1.6;
-  color: #222222;         /* Blacks */
-}
-
 /* Smooth scroll when clicking nav links */
 html {
   scroll-behavior: smooth;
