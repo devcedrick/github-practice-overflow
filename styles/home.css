@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 140vh;
+  height: 100vh;
 
   /* gradient + image combined */
   background:  url("/assets/images/hero-banner.jpg") no-repeat center center/cover;
