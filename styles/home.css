@@ -1,0 +1,62 @@
+/* HOME / WELCOME SECTION */
+.home-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 140vh;
+
+  /* gradient + image combined */
+  background:  url("/assets/images/hero-banner.jpg") no-repeat center center/cover;
+
+  padding: 0;
+  color: #FAFAFA;
+}
+
+/* Overlay for readability */
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(113, 113, 113, 0.3); /* semi-transparent black */
+  z-index: 1;
+}
+
+.welcome-container {
+  position: relative; /* make content appear above overlay */
+  max-width: 100%;
+  z-index: 2;
+}
+
+.welcome-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222; /* Secondary color for contrast */
+}
+
+.welcome-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #222222dd; /* light text on dark overlay */
+}
+
+.welcome-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #006DAA;
+  color: #FAFAFA;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.welcome-btn:hover {
+  background: #004d77; /* Darker Primary */
+}
