@@ -158,7 +158,6 @@
   
   .contact-container {
     width: 100%;
-    border: 1px solid black;
     border-radius: 15px;
   }
   
@@ -167,7 +166,11 @@
   }
   
   .form-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
+  }
+
+  .form-subtitle{
+    font-size: 1rem;
   }
   
   .form-content,
