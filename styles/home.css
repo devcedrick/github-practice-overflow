@@ -60,3 +60,15 @@
 .welcome-btn:hover {
   background: #004d77; /* Darker Primary */
 }
+
+@media screen and (max-width: 768px) {
+  .welcome-title{
+    font-size: 4rem;
+  }
+  .welcome-subtitle {
+    font-size: 1.15rem;
+  }
+  .welcome-btn{
+    padding: 15px 100px;
+  }
+}
