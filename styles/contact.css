@@ -150,50 +150,52 @@
   background-color: #f8fff9;
 }
 
-@media (max-width: 768px) {
-body {
-    padding: 20px 10px;
-}
-
-.contact-container {
+/* Smaller devices (max-width: 767px) */
+@media (max-width: 767px) {
+  body {
+    padding: 0 0 0;
+  }
+  
+  .contact-container {
+    width: 100%;
+    border: 1px solid black;
     border-radius: 15px;
-}
-
-.form-header {
+  }
+  
+  .form-header {
     padding: 30px 20px;
-}
-
-.form-title {
+  }
+  
+  .form-title {
     font-size: 2rem;
-}
-
-.form-content,
-.contact-info {
+  }
+  
+  .form-content,
+  .contact-info {
     padding: 30px 20px;
-}
-
-.form-row {
+  }
+  
+  .form-row {
     grid-template-columns: 1fr;
     gap: 15px;
-}
-
-.form-input,
-.form-textarea {
+  }
+  
+  .form-input,
+  .form-textarea {
     padding: 12px 15px;
-}
-
-.submit-btn {
+  }
+  
+  .submit-btn {
     padding: 15px 25px;
     font-size: 1rem;
-}
-}
+  }
 
-@media (max-width: 480px) {
-.form-title {
-    font-size: 1000px;
-}
+  .content-section{
+    margin-top: -50px;
+  }
 
-.form-subtitle {
-    font-size: 1rem;
-}
+  .section-header{
+    margin-top: 0;
+    padding: 0;
+  }
 }
