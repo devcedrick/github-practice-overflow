@@ -1,74 +1,171 @@
-/* HOME / WELCOME SECTION */
+/* Home section with fixed background */
 .home-section {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   height: 100vh;
-
-  /* gradient + image combined */
-  background:  url("/assets/images/hero-banner.jpg") no-repeat center center/cover;
-
-  padding: 0;
-  color: #FAFAFA;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Overlay for readability */
-.home-section::before {
-  content: "";
+.home-section img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay for better text readability */
+.home-section::after {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(113, 113, 113, 0.3); /* semi-transparent black */
-  z-index: 1;
+  background: linear-gradient(135deg, rgba(16, 36, 64, 0.8) 0%, rgba(42, 95, 168, 0.7) 100%);
+  z-index: 0;
 }
 
+/* Welcome content */
 .welcome-container {
-  position: relative; /* make content appear above overlay */
-  max-width: 100%;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .welcome-title {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #222; /* Secondary color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease-out;
 }
 
 .welcome-subtitle {
   font-size: 1.25rem;
-  margin-bottom: 30px;
-  color: #222222dd; /* light text on dark overlay */
+  margin-bottom: 40px;
+  font-weight: 300;
+  animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 .welcome-btn {
   display: inline-block;
-  padding: 12px 24px;
-  background: #006DAA;
-  color: #FAFAFA;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 15px 40px;
+  background: #4A90D9;
+  color: white;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s ease;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-out 0.6s both;
+  box-shadow: 0 4px 15px rgba(126, 88, 232, 0.2);
 }
 
 .welcome-btn:hover {
-  background: #004d77; /* Darker Primary */
+  background: #3372b4;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(126, 88, 232, 0.3);
 }
 
-@media screen and (max-width: 768px) {
-  .welcome-title{
-    font-size: 4rem;
+/* Additional content to demonstrate scroll effect */
+.content-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #2a5fa8;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.feature {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature i {
+  font-size: 2.5rem;
+  color: #2a5fa8;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
   }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-title {
+      font-size: 2/25rem;
+  }
+  
   .welcome-subtitle {
-    font-size: 1.15rem;
+      font-size: 0.9rem;
   }
-  .welcome-btn{
-    padding: 15px 100px;
+  
+  .section-title {
+      font-size: 2rem;
   }
 }
